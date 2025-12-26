@@ -1,9 +1,9 @@
 / {
     chosen {
-        zmk,kscan = &keys;
+        zmk,kscan = &kscan0;
     };
 
-    keys {
+    kscan0: keys {
         compatible = "gpio-keys";
 
         button_0: button_0 {
