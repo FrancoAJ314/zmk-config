@@ -1,0 +1,4 @@
+config SHIELD_FEATHER_MOUSE
+    bool "Feather Mouse"
+    def_bool $(shields_list_contains,feather_mouse)
+    depends on ZMK_KEYBOARD

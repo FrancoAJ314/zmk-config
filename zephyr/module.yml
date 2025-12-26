@@ -1,3 +1,5 @@
+name: zmk-keyboard-feather_mouse
+
 build:
   settings:
     board_root: .

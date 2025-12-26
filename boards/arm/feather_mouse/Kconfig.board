@@ -1,0 +1,3 @@
+config BOARD_FEATHER_MOUSE
+    bool "feather_mouse"
+    depends on SOC_NRF52840_QIAA

@@ -17,4 +17,20 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
----
+#---
+# build.yaml
+boards:
+  feather_nouse:
+    keymaps:
+      default:
+        overlays: []
+        keymap: feather_nouse/keymap.keymap
+
+shields:
+  feather_mouse:
+    enabled: true
+
+build:
+  settings:
+    board_root: boards/arm/feather_nouse
+    build_dir: build

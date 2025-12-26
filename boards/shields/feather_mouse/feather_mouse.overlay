@@ -1,0 +1,10 @@
+/ {
+    keys {
+        compatible = "gpio-keys";
+
+        button_0: button_0 {
+            gpios = <&gpio0 2 GPIO_ACTIVE_LOW>; // D2 = P0.02
+            label = "BUTTON_0";
+        };
+    };
+};
