@@ -3,12 +3,10 @@
         zmk,kscan = &kscan0;
     };
 
-    kscan0: keys {
-        compatible = "gpio-keys";
-
-        button_0: button_0 {
-            gpios = <&gpio0 2 GPIO_ACTIVE_LOW>; /* D2 */
-            label = "BUTTON_0";
-        };
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        input-gpios = <
+            &gpio0 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)
+        >;
     };
 };
