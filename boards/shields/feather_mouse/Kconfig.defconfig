@@ -3,10 +3,4 @@ if SHIELD_FEATHER_MOUSE
 config ZMK_KEYBOARD_NAME
     default "Feather Mouse"
 
-config GPIO
-    default y
-
-config GPIO_KEYS
-    default y
-
 endif
