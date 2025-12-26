@@ -20,11 +20,11 @@
 #---
 # build.yaml
 boards:
-  feather_nouse:
+  feather_mouse:
     keymaps:
       default:
+        keymap: feather_mouse/keymap.keymap
         overlays: []
-        keymap: feather_nouse/keymap.keymap
 
 shields:
   feather_mouse:
@@ -32,5 +32,5 @@ shields:
 
 build:
   settings:
-    board_root: boards/arm/feather_nouse
+    board_root: boards/arm/feather_mouse
     build_dir: build
