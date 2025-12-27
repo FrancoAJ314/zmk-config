@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: sudo apt update && sudo apt install -y python3-pip ninja-build gperf dtc
+      - run: sudo apt update && sudo apt install -y python3-pip ninja-build gperf device-tree-compiler
       - run: pip3 install --upgrade west
       - run: west init -l $GITHUB_WORKSPACE
       - run: west update
