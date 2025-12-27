@@ -1,4 +1,0 @@
----
-include:
-  - board: adafruit_feather_nrf52840
-    shield: feather_mouse
