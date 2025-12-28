@@ -3,11 +3,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: sudo apt update && sudo apt install -y python3-pip ninja-build gperf device-tree-compiler
-      - run: pip3 install --upgrade west
-      - run: west init -l $GITHUB_WORKSPACE
-      - run: west update
-      - run: west build -b adafruit_feather_nrf52840 -s boards/shields/feather_mouse
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
