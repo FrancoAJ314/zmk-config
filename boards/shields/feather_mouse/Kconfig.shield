@@ -1,3 +1,4 @@
 config SHIELD_FEATHER_MOUSE
     bool "Feather Mouse"
     depends on ZMK_KEYBOARD
+    default y
