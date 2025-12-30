@@ -1,0 +1,6 @@
+if feather_mouse
+
+config ZMK_KEYBOARD_NAME
+    default "Feather Mouse"
+
+endif
