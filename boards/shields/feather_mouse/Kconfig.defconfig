@@ -1,4 +1,4 @@
-if feather_mouse
+if SHIELD_FEATHER_MOUSE
 
 config ZMK_KEYBOARD_NAME
     default "Feather Mouse"
