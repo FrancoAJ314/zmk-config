@@ -1,0 +1,9 @@
+name: Feather Mouse
+features:
+  - keys
+matrix:
+  rows: 3
+  cols: 4
+  diode_direction: COL2ROW
+microcontroller: nrf52840
+board: adafruit_feather_nrf52840 
