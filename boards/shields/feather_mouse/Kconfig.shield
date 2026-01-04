@@ -1,2 +1,2 @@
 config SHIELD_FEATHER_MOUSE
-    def_bool $(shields_list_contains,feather_mouse)
+    def_bool y
