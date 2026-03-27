@@ -1,0 +1,10 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        bindings = <
+            &button_1
+            &button_2
+            &button_3
+        >;
+    };
+};
