@@ -10,9 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Build firmware
-        uses: zmkfirmware/zmk-build-action@v1
-        with:
-          build-target: feathermouse
+        uses: zmkfirmware/zmk/.github/workflows/build.yml@main
